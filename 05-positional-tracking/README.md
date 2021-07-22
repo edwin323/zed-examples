@@ -96,7 +96,7 @@ Check the [Integrations](https://github.com/qt-truong/zed-examples/tree/master/1
 
 
 ## Documentation
-For more information, read the [Documentation](https://www.stereolabs.com/docs/positional-tracking) or specific sections:
+For more information, read the [Documentation](https://www.stereolabs.com/docs/positional-tracking) or these specific sections:
 
 * [Positional Tracking Overview](https://www.stereolabs.com/docs/positional-tracking/)
 * [Getting Pose](stereolabs.com/docs/positional-tracking/using-tracking/#getting-pose)
