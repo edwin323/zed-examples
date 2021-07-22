@@ -43,12 +43,11 @@ For code examples, check out the [Tutorial](https://github.com/qt-truong/zed-exa
 Check the [Integrations](https://github.com/qt-truong/zed-examples/tree/master/11-Integrations#overview) list to use positional tracking with your favorite suite of tools and libraries.
 
 ### Read More
-For more information, read the [Documentation](https://www.stereolabs.com/docs/positional-tracking).
+For more information, read the [Documentation](https://www.stereolabs.com/docs/positional-tracking) or specific sections:
 
-* [Enabling Positional Tracking](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#enabling-positional-tracking)
-* [Getting Pose](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#getting-pose)
-* [Tracking States](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#getting-pose)
-* [Area Memory](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#getting-pose)
-* [Positional Tracking Configuration](#getting-pose)
-* [Code Examples](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#code-example)
-* [Integrations](#integrations)
+* [Positional Tracking Overview](https://www.stereolabs.com/docs/positional-tracking/)
+* [Getting Pose](stereolabs.com/docs/positional-tracking/using-tracking/#getting-pose)
+* [Tracking States](https://www.stereolabs.com/docs/positional-tracking/using-tracking/#tracking-states)
+* [Area Memory](https://www.stereolabs.com/docs/positional-tracking/area-memory/)
+* [Coordinate Frames](https://www.stereolabs.com/docs/positional-tracking/coordinate-frames/)
+* [Using the API](https://www.stereolabs.com/docs/positional-tracking/using-tracking/)
