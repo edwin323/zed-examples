@@ -1,13 +1,50 @@
 # Positional Tracking
 
-Positional tracking is the ability of a device to estimate its position relative to the world around it. Also called motion tracking or match moving in the movie industry, this is used to track the movement of a camera or user in 3D space with six degrees of freedom (6DoF).
+<video width="100%" height="auto" playsinline="" autoplay="" loop="" muted="" preload="auto" style="max-width:700px;margin-top:20px">
+    <source src="https://cdn.stereolabs.com/docs/positional-tracking/images/zed-positional-tracking.mp4" type="video/mp4">
+    <source src="https://cdn.stereolabs.com/docs/positional-tracking/images/zed-positional-tracking.webm" type="video/webm">
+</video>
 
-**Overview**
+## Overview
+
+Positional tracking is the ability of a device to estimate its position relative to the world around it. Also called motion tracking or odometry, this is used to track the movement of a camera or user in 3D space with six degrees of freedom (6DoF).
+
+The ZED uses visual tracking of its surroundings to understand the movement of its user or system. As the camera moves in the real-world, it reports its new position and orientation. This information is called the camera 6DoF pose. Pose information is output at the frame rate of the camera, up to 60fps in HD720 and 100fps in WVGA mode.
+
+
+
+
+### Getting Position and Orientation
+
+The ZED SDK returns pose information for each frame. The pose is given for the left eye of the camera. It is relative to a reference [coordinate frame](https://www.stereolabs.com/docs/positional-tracking/coordinate-frames/), usually the World Frame which is fixed in space.
+
+To learn how to get Position and Orientation, see [using the API](https://www.stereolabs.com/docs/positional-tracking/using-tracking/) section.
+
+
+## Overview
 
 * [Positional Tracking Configuration](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#positional-tracking-configuration)
 * [Enabling Positional Tracking](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#enabling-positional-tracking)
 * [Getting Pose](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#getting-pose)
 * [Code Example](https://github.com/qt-truong/zed-examples/tree/master/05-PositionalTracking#code-example)
+
+## Code Example
+For code examples, check out the [Tutorial](https://github.com/qt-truong/zed-examples/tree/master/09-Tutorials/tutorial%204%20-%20positional%20tracking) and [Sample](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/positional%20tracking) on GitHub.
+
+### Integrations
+
+#### API
+
+* [Javascript](https://github.com/snowplow/snowplow-javascript-tracker)
+* [AMP](https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/google-amp-tracker/)
+
+#### API
+
+* [Javascript](https://github.com/snowplow/snowplow-javascript-tracker)
+* [AMP](https://docs.snowplowanalytics.com/docs/collecting-data/collecting-from-own-applications/google-amp-tracker/)
+
+
+
 
 ## Positional Tracking Configuration
 To configure positional tracking, use `InitParameters` at initialization and `RuntimeParameters` to change specific parameters during use.
@@ -128,6 +165,3 @@ By default, the pose of the left eye of the camera is returned. To get the pose 
 
 #### Tracking States
 `getPosition()` returns a `TRACKING_STATE`. When a new position is available, `TRACKING_STATE::OK` is returned. During initialization or when an Area file is loaded, `TRACKING_STATE::SEARCHING` is returned till the camera recognizes the area. If positional tracking framerate is too low, the state will turn to `TRACKING_STATE::FPS_TOO_LOW` and stop returning new positions.
-
-## Code Example
-For code examples, check out the [Tutorial](https://github.com/qt-truong/zed-examples/tree/master/09-Tutorials/tutorial%204%20-%20positional%20tracking) and [Sample](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/positional%20tracking) on GitHub.
