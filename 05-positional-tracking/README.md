@@ -2,7 +2,7 @@
 
 Positional tracking is the ability of a device to estimate its position relative to the world around it. Also called motion tracking or odometry, this is used to track the movement of a camera or user in 3D space with six degrees of freedom (6DoF).
 
-### Overview
+## Overview
 
 * [How It Works](#how-it-works)
 * [Getting Pose](#getting-pose)
@@ -12,12 +12,12 @@ Positional tracking is the ability of a device to estimate its position relative
 * [Integrations](#integrations)
 
 
-### How It Works
+## How It Works
 
 The ZED uses visual-inertial stereo tracking of its surroundings to understand the movement of its user or system. As the camera moves in the real-world, the ZED SDK reports its position and orientation for each new frame. This information is called the camera 6DoF pose. Pose information is output at the frame rate of the camera, up to 60fps in HD720 and 100fps in WVGA mode.
 
 
-### Getting Pose
+## Getting Pose
 Position gets updated with every new frame. To retrieve pose data, after opening the camera, enable positional tracking using `enablePositionalTracking()`, then use `getPosition()` after grabbing a frame.
 
 The following pose data is returned:
@@ -81,12 +81,21 @@ if (zed.Grab(ref runtimeParameters) == ERROR_CODE.SUCCESS) {
 
 *Note:* Positional tracking uses image and depth information to estimate the position of the camera in 3D space. To improve tracking results, use high FPS video modes such as HD720 and WVGA.
 
-### Positional Tracking Configuration
+## Positional Tracking Configuration
 To configure positional tracking, use `InitParameters` at initialization and `RuntimeParameters` to change specific parameters during use.
 
 To read more about tracking configuration, see [using the API](https://www.stereolabs.com/docs/positional-tracking/using-tracking/) docs.
 
-### Documentation
+
+## Code Examples
+For code examples, check out the [Tutorial](https://github.com/qt-truong/zed-examples/tree/master/09-Tutorials/tutorial%204%20-%20positional%20tracking) and [Sample](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/positional%20tracking) on GitHub.
+
+
+## Integrations
+Check the [Integrations](https://github.com/qt-truong/zed-examples/tree/master/11-Integrations#overview) list to use positional tracking with your favorite suite of tools and libraries.
+
+
+## Documentation
 For more information, read the [Documentation](https://www.stereolabs.com/docs/positional-tracking) or specific sections:
 
 * [Positional Tracking Overview](https://www.stereolabs.com/docs/positional-tracking/)
@@ -95,10 +104,3 @@ For more information, read the [Documentation](https://www.stereolabs.com/docs/p
 * [Area Memory](https://www.stereolabs.com/docs/positional-tracking/area-memory/)
 * [Coordinate Frames](https://www.stereolabs.com/docs/positional-tracking/coordinate-frames/)
 * [Using the API](https://www.stereolabs.com/docs/positional-tracking/using-tracking/)
-
-## Code Examples
-For code examples, check out the [Tutorial](https://github.com/qt-truong/zed-examples/tree/master/09-Tutorials/tutorial%204%20-%20positional%20tracking) and [Sample](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/positional%20tracking) on GitHub.
-
-
-## Integrations
-Check the [Integrations](https://github.com/qt-truong/zed-examples/tree/master/11-Integrations#overview) list to use positional tracking with your favorite suite of tools and libraries.
