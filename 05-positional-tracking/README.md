@@ -7,9 +7,8 @@ Positional tracking is the ability of a device to estimate its position relative
 * [How It Works](#how-it-works)
 * [Getting Pose](#getting-pose)
 * [Positional Tracking Configuration](#positional-tracking-configuration)
-* [Code Examples](#code-examples)
 * [Integrations](#integrations)
-
+* [Code Examples](#code-examples)
 
 ### How It Works
 
@@ -85,14 +84,6 @@ To configure positional tracking, use `InitParameters` at initialization and `Ru
 
 To read more about tracking configuration, see [using the API](https://www.stereolabs.com/docs/positional-tracking/using-tracking/) docs.
 
-
-### Code Examples
-For code examples, check out the [Tutorial](https://github.com/qt-truong/zed-examples/tree/master/09-Tutorials/tutorial%204%20-%20positional%20tracking) and [Sample](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/positional%20tracking) on GitHub.
-
-
-### Integrations
-Check the [Integrations](https://github.com/qt-truong/zed-examples/tree/master/11-Integrations#overview) list to use positional tracking with your favorite suite of tools and libraries.
-
 ### Read More
 For more information, read the [Documentation](https://www.stereolabs.com/docs/positional-tracking) or specific sections:
 
@@ -102,3 +93,10 @@ For more information, read the [Documentation](https://www.stereolabs.com/docs/p
 * [Area Memory](https://www.stereolabs.com/docs/positional-tracking/area-memory/)
 * [Coordinate Frames](https://www.stereolabs.com/docs/positional-tracking/coordinate-frames/)
 * [Using the API](https://www.stereolabs.com/docs/positional-tracking/using-tracking/)
+
+
+## Integrations
+Check the [Integrations](https://github.com/qt-truong/zed-examples/tree/master/11-Integrations#overview) list to use positional tracking with your favorite suite of tools and libraries.
+
+## Code Examples
+For code examples, check out the [Tutorial](https://github.com/qt-truong/zed-examples/tree/master/09-Tutorials/tutorial%204%20-%20positional%20tracking) and [Sample](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/positional%20tracking) on GitHub.
