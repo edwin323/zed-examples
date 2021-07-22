@@ -7,8 +7,10 @@ Positional tracking is the ability of a device to estimate its position relative
 * [How It Works](#how-it-works)
 * [Getting Pose](#getting-pose)
 * [Positional Tracking Configuration](#positional-tracking-configuration)
-* [Integrations](#integrations)
+* [Docs](#documentation)
 * [Code Examples](#code-examples)
+* [Integrations](#integrations)
+
 
 ### How It Works
 
@@ -84,7 +86,7 @@ To configure positional tracking, use `InitParameters` at initialization and `Ru
 
 To read more about tracking configuration, see [using the API](https://www.stereolabs.com/docs/positional-tracking/using-tracking/) docs.
 
-### Read More
+### Documentation
 For more information, read the [Documentation](https://www.stereolabs.com/docs/positional-tracking) or specific sections:
 
 * [Positional Tracking Overview](https://www.stereolabs.com/docs/positional-tracking/)
@@ -94,9 +96,9 @@ For more information, read the [Documentation](https://www.stereolabs.com/docs/p
 * [Coordinate Frames](https://www.stereolabs.com/docs/positional-tracking/coordinate-frames/)
 * [Using the API](https://www.stereolabs.com/docs/positional-tracking/using-tracking/)
 
+## Code Examples
+For code examples, check out the [Tutorial](https://github.com/qt-truong/zed-examples/tree/master/09-Tutorials/tutorial%204%20-%20positional%20tracking) and [Sample](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/positional%20tracking) on GitHub.
+
 
 ## Integrations
 Check the [Integrations](https://github.com/qt-truong/zed-examples/tree/master/11-Integrations#overview) list to use positional tracking with your favorite suite of tools and libraries.
-
-## Code Examples
-For code examples, check out the [Tutorial](https://github.com/qt-truong/zed-examples/tree/master/09-Tutorials/tutorial%204%20-%20positional%20tracking) and [Sample](https://github.com/qt-truong/zed-examples/tree/master/10-Samples/positional%20tracking) on GitHub.
